@@ -244,6 +244,9 @@ textarea {
 ul {
     list-style-type: none;
 }
+ul li {
+    margin-top: 40px;
+}
 @font-face {
     font-family: Gagalin;
     src: url(../fonts/Gagalin/Gagalin-Regular.otf);
@@ -252,13 +255,7 @@ ul {
     font-family: Lifehack;
     src: url(../fonts/Lifehack%20Medium.otf);
 }
-
-.big-sign {
-
-
-}
-
-.block {
+.big-sign {} .block {
     padding: 10px 0;
 }
 .first-slide {
@@ -274,7 +271,7 @@ ul {
     flex-wrap: wrap;
 }
 .main-logo__img {
-    margin-top: 20px;
+    margin-top: 60px;
 }
 .nav-wrap {
     height: auto;
@@ -321,22 +318,26 @@ ul {
 }
 .first-slide__image-chicken-burger {
     position: relative;
-    top: -180px;
-    left: 80px;
-    width: 300px;
-    height: 200px;
+    top: -300px;
+    left: 45px;
+    width: 350px;
+    height: 350px;
     background-size: 100%;
 }
 .first-slide__title {
-    margin-top: 100px;
+    margin-top: 60px;
     max-width: 500px;
     height: 400px;
     order: 3;
     flex-basis: 40%;
 }
 .title__big-sing-content {
-    margin:  90px 0 10px 0px;
+    margin: 90px 0 10px 0px;
     color: #f2a62d;
+}
+.first-slide__image-drops {
+    position: relative;
+    top: -100px;
 }
 .first-slide__title {
     top: 20px;
@@ -349,7 +350,6 @@ ul {
     font-size: 5em;
     text-transform: uppercase;
 }
-
 .title__text-block-content {
     font-family: 'Lifehack';
     font-size: 3em;
@@ -359,7 +359,7 @@ ul {
 }
 .scroll {
     position: relative;
-    margin-top: 90px;
+    margin-top: 40px;
     margin-left: 50%;
     display: block;
     width: 20px;
@@ -409,16 +409,83 @@ ul {
     color: grey;
 }
 .third-slide {
-    display: flex;
-    flex-direction: row;
     width: 100%;
     height: 800px;
-    background: #E9F978;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
+    background: linear-gradient(#F3AC2E, #E5812D, #F3AC2E);
+}
+.third-slide__img {
+    display: block;
+    left: 100px;
+    margin-top: 60px;
+    position: absolute;
+    width: 100px;
+    height: 110px;
+    background: #EA7827;
+    border-radius: 5px;
+    text-align: center;
+}
+.img__icon-burger {
+    position: relative;
+    top: 15px;
+}
+.img__icon-burger-text {
+    font-family: "Gagalin";
+    color: white;
+    text-transform: uppercase;
+    margin-top: 30px;
+    font-size: 1em;
+}
+.third-slide__img-burger {
+    display: inline-block;
+    position: relative;
+    margin-left: 15%;
+    margin-top: 150px;
+    width: 430px;
+    height: 400px;
+    background: url(../burgers-slider/Spicy_Shrimp_Burger.png) no-repeat;
+}
+.third-slide__img2 {
+    display: block;
+    left: 100px;
+    margin-top: 600px;
+    position: absolute;
+    width: 100px;
+    height: 110px;
+    border-radius: 5px;
+    text-align: center;
+}
+.img__icon-kkal-text {
+    font-family: "Gagalin";
+    color: white;
+    text-transform: uppercase;
+    margin-top: -35px;
+    font-size: 1em;
+}
+.third-slide__information-block {
+    width: 600px;
+    height: 500px;
+    margin-left: 70px;
+    float: right;
+    position: relative;
+    top: 150px;
+    right: 100px;
+}
+.third-slide__big-sign {
+    font-family: "Gagalin";
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 4em;
+}
+.third-slide__text {
+    font-family: "Arial";
+    color: white;
+}
+.font-price {
+    margin-top: 50px;
+    font-family: "Gagalin";
+    color: #DA3926;
+    font-size: 4em;
 }
 .fourth-slide {
     display: flex;
@@ -554,7 +621,6 @@ ul {
     margin-left: 30px;
     position: absolute;
 }
-
 .sixth-slide {
     display: block;
     position: relative;
@@ -563,146 +629,137 @@ ul {
     overflow: hidden;
     background: #141616;
 }
-
 .label {
     color: #A0B7B9;
     font-family: "Arial";
-    bottom: 10px; 
+    bottom: 10px;
     font-size: 0.9em;
-    
 }
-
 .input {
     border: 0;
     border-radius: 3px;
     height: 35px;
     margin-top: 5px;
-    padding-left: 20px;  
+    padding-left: 20px;
 }
-
 .sixth-slide__title {
     margin: 100px 0;
     width: 100%;
     color: #f2a62d;
     text-align: center;
 }
-
 .form-block {
     display: inline-block;
     margin-left: 20px;
 }
-
 .row-block {
     margin-top: 10px;
 }
-
 #streetName {
     width: 515px;
 }
 #phoneNumber {
     width: 235px;
-   
 }
 #clientName {
     width: 235px;
 }
-
-#building { width: 95px; }
-#buildingNumber { width: 95px; }
-#apartmentNumber { width: 95px; }
-#floor { width: 94px; }
-
+#building {
+    width: 95px;
+}
+#buildingNumber {
+    width: 95px;
+}
+#apartmentNumber {
+    width: 95px;
+}
+#floor {
+    width: 94px;
+}
 .left-side {
     margin-left: 10%;
     width: 40%;
     display: inline-block;
 }
-
 .right-side {
     margin-left: 0;
     width: 30%;
     display: inline-block;
 }
-
 #comment {
     width: 515px;
     height: 110px;
 }
-
 .checkbox {
     top: 15px;
     position: relative;
     color: #A0B7B9;
     font-family: "Arial";
-    
     font-size: 0.9em;
-
 }
-
 .radio {
     color: #A0B7B9;
     font-family: "Arial";
     font-size: 0.9em;
 }
-
 .lower {
-  margin-left: 50%;
-  margin-top: 20px;
- 
+    margin-left: 50%;
+    margin-top: 20px;
 }
-
 .footer {
     display: block;
     position: relative;
     width: 100%;
     height: 80px;
-
     background: #222727;
 }
-
 .footer__text {
     margin-left: 40px;
     display: inline-block;
 }
-
 .footer__text-paragraph {
     position: relative;
-    top:20px;
+    top: 20px;
     margin: 0;
     color: white;
 }
-
 .footer__text-number {
     position: relative;
-    top:0px;
+    top: 0px;
     margin: 0;
     color: #C7482F;
     font-family: "Arial";
 }
-
 .footer__social {
     display: inline-block;
     margin-left: 55%;
     position: relative;
     bottom: 10px;
-
 }
-
 .footer__ul {
     margin: 0;
 }
-
 .footer__ul li {
     display: inline-block;
     margin-left: 20px;
-
 }
-
-.vk{ background: url(../icons/vk.svg) no-repeat; background-size: 100%; background-position: 50% 50%; }
-.inst{ background: url(../icons/inst.svg) no-repeat ; background-size: 100%; }
-.fb{ background: url(../icons/fb.svg) no-repeat; background-size: 100%; }
-.twit{ background: url(../icons/twitter.svg) no-repeat; background-size: 100%; }
-
+.vk {
+    background: url(../icons/vk.svg) no-repeat;
+    background-size: 100%;
+    background-position: 50% 50%;
+}
+.inst {
+    background: url(../icons/inst.svg) no-repeat;
+    background-size: 100%;
+}
+.fb {
+    background: url(../icons/fb.svg) no-repeat;
+    background-size: 100%;
+}
+.twit {
+    background: url(../icons/twitter.svg) no-repeat;
+    background-size: 100%;
+}
 .soc {
     width: 20px;
     height: 20px;
